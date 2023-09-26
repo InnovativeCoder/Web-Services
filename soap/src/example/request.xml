@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<GetCourseDetailsRequest xmlns="https://vanier.com/courses">
+    <id>123</id>
+</GetCourseDetailsRequest>

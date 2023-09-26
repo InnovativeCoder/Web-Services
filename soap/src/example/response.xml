@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<GetCourseDetailsResponse xmlns="https://vanier.com/courses"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation ="https://vanier.com/courses course-details.xsd">
+    <CourseDetails>
+        <id>123</id>
+        <name>Spring Boot</name>
+        <description>Learn Spring Boot</description>
+    </CourseDetails>
+</GetCourseDetailsResponse>
