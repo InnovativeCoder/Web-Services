@@ -2,20 +2,22 @@ package dev.jerry.restful.Exception;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 public class ErrorDetails {
-    private LocalDateTime timeStamp;
+    private LocalDate timestamp;
     private String message;
-    private String Details;
+    private String details;
 
-    public ErrorDetails(LocalDateTime timeStamp, String message, String details) {
-        this.timeStamp = timeStamp;
+    public ErrorDetails(LocalDate timestamp, String message, String details) {
+        super();
+        this.timestamp = timestamp;
         this.message = message;
-        Details = details;
+        this.details = details;
     }
 
-    public LocalDateTime getTimeStamp() {
-        return timeStamp;
+    public LocalDate getTimestamp() {
+        return timestamp;
     }
 
     public String getMessage() {
@@ -23,15 +25,7 @@ public class ErrorDetails {
     }
 
     public String getDetails() {
-        return Details;
+        return details;
     }
 
-    @Override
-    public String toString() {
-        return "ErrorDetails{" +
-                "timeStamp=" + timeStamp +
-                ", message='" + message + '\'' +
-                ", Details='" + Details + '\'' +
-                '}';
-    }
 }
