@@ -54,4 +54,9 @@ public class userResource {
     public void deleteUser(@PathVariable int id){
         service.deleteById(id);
     }
+
+    @GetMapping("/filtering")
+    public SomeBean filtering(){
+        return new SomeBean("value1", "value2", "value3");
+    }
 }
