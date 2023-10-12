@@ -1,5 +1,6 @@
 package dev.jerry.data.course.jdbc;
 
+import dev.jerry.data.course.Course;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -27,7 +28,7 @@ public class CourseJDBCRepository {
                     where id = ?
                     """;
 
-    public void insert(course course){
+    public void insert(Course course){
         springJdbcTemplate.update(INSERT_QUERY,
                 course.getId(), course.getName(), course.getAuthor());
     }
@@ -36,9 +37,9 @@ public class CourseJDBCRepository {
         springJdbcTemplate.update(DELETE_QUERY, id);
     }
 
-    public course findById(long id){
+    public Course findById(long id){
         return springJdbcTemplate.queryForObject(
-                SELECT_QUERY, new BeanPropertyRowMapper<>(course.class), id
+                SELECT_QUERY, new BeanPropertyRowMapper<>(Course.class), id
         );
     }
 }
