@@ -36,3 +36,5 @@ Implementation and notes for the course on Web Services from In28minutes - [Udem
   - Basic Authentication
 
 ## And after learning all this, reward!!
+<img style="height:400px; width:550px" src="https://github.com/InnovativeCoder/Web-Services/blob/main/certificates/UC-cdd5a520-7b42-49d2-885e-fa2e6a09589e.jpg"/>
+
